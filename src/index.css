@@ -1,0 +1,67 @@
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
+	color: var(--text-color);
+  }
+  
+  .app {
+	text-align: center;
+	padding: 20px;
+  }
+  
+  .note-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* create 5 columns, each taking equal space */
+	grid-gap: 10px; /* add gap between notes */
+	margin: 20px;
+  }
+  
+  .note-input {
+	margin-bottom: 20px;
+  }
+  
+  textarea {
+	width: 300px;
+	height: 50px;
+	padding: 10px;
+	margin-right: 10px;
+  }
+  
+  .note {
+	background-color: var(--note-background-color);
+	padding: 10px;
+	margin: 10px;
+	text-align: left;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100px;
+	/* make each note span 1 grid cell */
+	grid-column: 1;
+	grid-row: auto;
+  }
+  
+  .note small {
+	margin-top: auto;
+  }
+  
+  button {
+	margin: 5px;
+	padding: 5px 10px;
+  }
+  
+  .dark-mode {
+	--background-color: #333;
+	--text-color: #fff;
+	--note-background-color: #484646;
+  }
+  
+  .light-mode {
+	--background-color: #c94141;
+	--text-color: #07024c;
+	--note-background-color: #686808;
+  }
